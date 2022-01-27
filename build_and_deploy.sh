@@ -13,7 +13,7 @@ docker build -t mkamel/webapp:latest -f Dockerfile .
 docker push mkamel/webapp:latest
 
 ## create minikube kubectl alias
-##alias kubectl="minikube kubectl --"
+alias kubectl="minikube kubectl --"
 
 ## deploy a K8s deployment, svc and ingress for web app
 kubectl apply -f webapp-k8s.yaml
